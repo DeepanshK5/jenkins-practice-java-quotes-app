@@ -24,7 +24,7 @@ public class Main {
         }
         
         // Create an HTTP server listening on port 8000
-        HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(8001), 0);
 
         // Define a context for the root path ("/")
         server.createContext("/", exchange -> {
@@ -49,7 +49,7 @@ public class Main {
 
         // Start the server
         server.start();
-        System.out.println("Server is running on port 8000...");
+        System.out.println("Server is running on port 8001...");
     }
 
     // Helper method to get a random quote
