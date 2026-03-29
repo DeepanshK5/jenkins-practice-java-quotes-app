@@ -66,3 +66,7 @@ This project is licensed under the MIT License.
 [TrainWithShubham](https://github.com/LondheShubham153)
 
 
+Doing changes to check will the pipeline run automatically or not
+
+
+Tyring tp
