@@ -27,10 +27,10 @@ This project is a simple Java-based HTTP server that serves random motivational 
    javac src/Main.java -d out
    java -cp out Main
    ```
-4. The server will start on `http://localhost:8000/`.
+4. The server will start on `http://localhost:8001/`.
 5. Test the API using:
    ```sh
-   curl http://localhost:8000/
+   curl http://localhost:8001/
    ```
 
 ### Running with Docker
@@ -42,7 +42,7 @@ This project is a simple Java-based HTTP server that serves random motivational 
    ```sh
    docker run -p 8000:8000 motivational-quotes-api
    ```
-3. Access the API at `http://localhost:8000/`.
+3. Access the API at `http://localhost:8001/`.
 
 ## File Structure
 ```
