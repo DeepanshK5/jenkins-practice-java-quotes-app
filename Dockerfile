@@ -17,3 +17,5 @@ EXPOSE 8001
 
 # Run the Java application when the container starts
 CMD ["java", "Main"]
+
+#Doing changes here
