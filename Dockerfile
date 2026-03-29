@@ -1,10 +1,5 @@
-# Use the official OpenJDK 17 image as the base image
-FROM openjdk:17-jdk-alpine
-
-# Set metadata
-LABEL maintainer="trainwithshubham@gmail.com"
-LABEL version="1.0"
-LABEL description="A Java Quotes application"
+# Use Amazon Corretto 17 (Alpine-based)
+FROM amazoncorretto:17-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -18,7 +13,7 @@ COPY quotes.txt quotes.txt
 RUN javac Main.java
 
 # Expose port 8000 for the HTTP server
-EXPOSE 8000
+EXPOSE 8001
 
 # Run the Java application when the container starts
 CMD ["java", "Main"]
