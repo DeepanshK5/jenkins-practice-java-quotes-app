@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  quotes-app:
+    build:
+      context: .
+    ports:
+      - "8001:8001"
