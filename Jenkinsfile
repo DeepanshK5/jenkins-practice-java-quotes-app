@@ -1,14 +1,26 @@
+@Library("Shared") _
 pipeline{
     agent{label 'newagent'}
     stages{
+        stage('Hello'){
+            steps{
+                script{
+                    hello()
+                }
+            }
+        }
         stage('Code'){
             steps{
-                git url:'https://github.com/DeepanshK5/jenkins-practice-java-quotes-app',branch:'master'
+                script{
+                    clone('https://github.com/DeepanshK5/jenkins-practice-java-quotes-app','master')
+                }
             }
         }
         stage('Build'){
             steps{
-                sh 'docker build -t quotes-app:latest .'
+                script{
+                    docker_build('quotes-app','latest')
+                }
             }
         }
         stage('Push'){
