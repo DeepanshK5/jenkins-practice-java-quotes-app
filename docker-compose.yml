@@ -2,7 +2,6 @@ version: "3.8"
 
 services:
   quotes-app:
-    build:
-      context: deepansh02/quotes-app:latest
+    image: deepansh02/quotes-app:latest
     ports:
       - "8001:8001"
